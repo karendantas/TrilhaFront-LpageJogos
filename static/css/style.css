@@ -1,92 +1,198 @@
-*{
-    font-family: 'popins', sans-serif;
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    
-}
-body{
 
-    background: rgb(62,62,62);
-    background: linear-gradient(180deg, rgba(62,62,62,1) 36%, rgba(24,5,17,1) 83%, rgba(123,16,128,0.9626225490196079) 93%);
+  @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    background-color: #f3e6ed;
+}
+
+header{
+    width: 100%;
+    background-color: #f3e6ed;
+    padding: 10px 20px;
+    box-shadow:  rgba(245, 169, 222, 0.384) 0px 3px 29px 0px;
+    position:fixed;
+    top:0;
+    z-index: 999;
+
+}
+
+.logotipo{
+    width: 100px;
 }
 
 .navigation{
-    display:flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    padding: 0 10px;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    padding: 18px 40px;
-    transition: all 0.5s;
-  
-}
-.navigation .logotipo{
-    width: 60px;
-}
-.navigation ul{
-    display:flex;
-    align-items: center;
-    gap: 5rem;
 }
 
-.navigation ul li a{
-    color:whitesmoke;
-    font-size: 18px;
-    font-weight: 500;
-    transition: all 0.5s;
 
-}
+/*estilo tracinhos do menu mobile*/
+.menu-hamburguer{
+    width: 50px;
+    height: 50px;
 
-.navigation ul li a:hover{
-    color: #00BFC3;
-}
+    background-color: transparent;
+    border: 0;
+    border-radius: 5px;
 
-/* menu da responsividade*/
-.menu{
+    position: relative;
     cursor: pointer;
+
     display: none;
 }
 
-.menu .bar{
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 5px;
-    background-color: black;
-    margin: 5px auto;
-}
-/* */
+.menu-hamburguer::after{
+    content: "";
 
-.home{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+
+    height: 5%;
+    width: 70%;
+
+    border-radius: 5px;
+    background-color: white;
+}
+
+.menu-hamburguer::before{
+    content: "";
+
+    position: absolute;
+    top: 55%;
+    left: 15%;
+
+    height: 5%;
+    width: 70%;
+
+    border-radius: 5px;
+    background-color: white;
+}
+
+/*navbar */
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.li{
+    margin-left: 30px ;
+}
+
+a{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(49, 26, 34);
+    text-decoration: none;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    font-family: Geologica;
+ 
+
+}
+
+a:hover{
+    color:  rgb(245, 169, 222);
+    transition: 0.5s ease;
+}
+
+
+/* main */
+.main{
     width: 100%;
     height: 100vh;
-    padding: 0 10px;
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    
-}
-.text-home{
-    color: whitesmoke;
-    margin-top: 50px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    
+}
+.main-bloco{
+position: absolute;
+z-index: 1;
+
+margin: 10% auto;
+left: 10%;
+
+width: 80%;
+height: 68.7vh;
+
+background-color:  rgb(245, 169, 222);
 }
 
-.banner{
-    display:flex;
+.main-imagem{
+    width: 900px;
+}
+
+.main-imagem:hover{
+    transition: 0.3s ease;
+    -webkit-filter: drop-shadow(1px 5px 5px #c975c9);
+  filter: drop-shadow(1px 5px 5px #c478a4);
+}
+.img-text{
+    position: absolute;
+    z-index: 3;
+    top:22%;
+    
+    display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    border-radius: 30px;
+   
+
 }
 
-.text-home h1{
-    font-family: Impact;
-    letter-spacing: 0.5rem;
-    font-size: 5rem;
+
+.main-text{
+    color: white;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Geologica;
 }
+
+.main-btn{
+    border: none;
+    background-color:rgb(212, 75, 183) ;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 20px;
+    font-family: Geologica;
+    text-transform: uppercase;
+}
+
+.main-btn:hover{
+    
+    transition: 0.5s ease;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.main-h1{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.main-p{
+    text-align: justify;
+    margin-bottom: 50px;
+    margin-left: 40px;
+}
+
