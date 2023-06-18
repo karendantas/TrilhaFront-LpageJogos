@@ -11,8 +11,21 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     background-color: #f3e6ed;
+    font-family: Geologica;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #c478a4;
+    border-radius: 30px;
+}
 header{
     width: 100%;
     background-color: #f3e6ed;
@@ -101,6 +114,7 @@ a{
     padding: 10px 15px;
     letter-spacing: 1px;
     font-family: Geologica;
+    
  
 
 }
@@ -112,10 +126,11 @@ a:hover{
 
 
 /* main */
-.main{
+.home{
     width: 100%;
     height: 100vh;
-
+    margin: 10% auto;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,11 +140,8 @@ a:hover{
 position: absolute;
 z-index: 1;
 
-margin: 10% auto;
-left: 10%;
-
 width: 80%;
-height: 68.7vh;
+height: 69.0vh;
 
 background-color:  rgb(245, 169, 222);
 }
@@ -143,10 +155,10 @@ background-color:  rgb(245, 169, 222);
     -webkit-filter: drop-shadow(1px 5px 5px #c975c9);
   filter: drop-shadow(1px 5px 5px #c478a4);
 }
+
 .img-text{
     position: absolute;
     z-index: 3;
-    top:22%;
     
     display: flex;
     align-items: center;
@@ -159,10 +171,11 @@ background-color:  rgb(245, 169, 222);
     color: white;
     margin-left: 200px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Geologica;
+    
 }
 
 .main-btn{
@@ -174,7 +187,7 @@ background-color:  rgb(245, 169, 222);
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     font-size: 20px;
-    font-family: Geologica;
+   
     text-transform: uppercase;
 }
 
@@ -196,3 +209,69 @@ background-color:  rgb(245, 169, 222);
     margin-left: 40px;
 }
 
+
+/* forms */
+
+.formulario{
+    
+   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.forms{
+    width: 800px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: rgb(245, 169, 222);
+    border-radius: 20px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-title{
+font-size: 30px;
+
+}
+label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+
+input{
+width: 400px;
+padding: 10px;
+border-radius:30px ;
+border: none;
+}
+
+
+/* carrossel de jogos */
+
+.main-caroussel{
+    margin: 10% auto;
+    width: 100%;
+}
+
+.games-caroussel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imggames{
+    width: 300px;
+    border-radius: 30px;
+    
+}
