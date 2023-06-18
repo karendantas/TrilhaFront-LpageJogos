@@ -223,6 +223,7 @@ background-color:  rgb(245, 169, 222);
 
 .forms{
     width: 800px;
+   
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -236,6 +237,7 @@ background-color:  rgb(245, 169, 222);
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    
 }
 
 .form-title{
@@ -274,4 +276,36 @@ border: none;
     width: 300px;
     border-radius: 30px;
     
+}
+
+
+/* responsividade */
+
+
+
+
+@media (max-width: 1400px) {
+    .main-imagem{
+    width: 750px;
+}
+}
+
+@media (max-width: 800px) {
+    body{
+        width: 50%;
+       margin: 0 auto;
+    }
+    header{
+        width: 800px;
+        display: flex;
+        left:0;
+        position: relative;
+    }
+
+    .navigation{
+        width: 100%;
+    }
+    .main-imagem{
+    width: 750px;
+}
 }
