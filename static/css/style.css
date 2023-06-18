@@ -137,13 +137,18 @@ a:hover{
     
 }
 .main-bloco{
-position: absolute;
+position: relative;
 z-index: 1;
 
 width: 80%;
 height: 69.0vh;
 
-background-color:  rgb(245, 169, 222);
+background-image: url("/static/img/skyc.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+transform: scaleX(-1);
+
+opacity: 0.5;
 }
 
 .main-imagem{
@@ -168,7 +173,7 @@ background-color:  rgb(245, 169, 222);
 
 
 .main-text{
-    color: white;
+    color: rgb(49, 26, 34);
     margin-left: 200px;
     display: flex;
     flex-wrap: wrap;
@@ -215,21 +220,23 @@ background-color:  rgb(245, 169, 222);
 .formulario{
     
    width: 100%;
+    height: 1200px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
+  background-color: #c478a4;
 }
 
 .forms{
-    width: 800px;
    
-    padding: 50px;
+    width: 600px;
+
+    margin: 15% 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white;
-    background-color: rgb(245, 169, 222);
+    color:#c975c9;
+    background-color:white;
     border-radius: 20px;
 }
 
