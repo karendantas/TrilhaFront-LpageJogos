@@ -127,6 +127,7 @@ a:hover{
 
 /* main */
 .home{
+    position: relative;
     width: 100%;
     height: 100vh;
     margin: 10% auto;
@@ -152,7 +153,7 @@ opacity: 0.5;
 }
 
 .main-imagem{
-    position: relative;
+   
     width: 900px;
     z-index: 4;
     
@@ -262,7 +263,7 @@ label{
     
 }
 
-input{
+input, select{
 width: 400px;
 padding: 10px;
 border-radius:30px ;
@@ -306,8 +307,20 @@ background-color: rgb(235, 224, 233);
     }
 }
 
+@media (max-width: 1300px) {
+    body{
+        margin: 10% auto;
+    }
+    .main-imagem{
+    width: 900px;
+    }
+    .main-text{
+        width: 300px;
+        margin-left: 350px;
+    }
+}
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     
 
     body{
@@ -342,7 +355,7 @@ background-color: rgb(235, 224, 233);
     }
 
     .formulario{
-        margin-top: 400px
+        margin-top: 300px
     }
 }
 
@@ -386,5 +399,57 @@ background-color: rgb(235, 224, 233);
 
     .formulario{
         margin-top: 400px
+    }
+}
+
+@media (max-width: 390px) {
+    
+
+    body{
+        
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+    }
+
+    .main-bloco{
+        height: 305px;
+    }
+    .img-text{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-text{
+        
+        margin: 0 150px 0 150px;
+     
+        font-size: 15px;
+    }
+
+    .main-imagem{
+
+    width: 500px;
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 410px;
+    }
+
+    .formulario{
+        margin-top: 400px;
+      
+    }
+
+    .forms, .form-group, input{
+        width: 300px;
+      
+    }
+    .forms{
+        height: 700px;
+
     }
 }
