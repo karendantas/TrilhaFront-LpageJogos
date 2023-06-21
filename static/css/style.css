@@ -14,8 +14,8 @@ body{
     font-family: Geologica;
 }
 
-html{
-    scroll-behavior: smooth;
+html, body{
+    scroll-behavior: smooth !important;
 }
 
 ::-webkit-scrollbar{
@@ -274,25 +274,51 @@ background-color: rgb(235, 224, 233);
 
 /* carrossel de jogos */
 
-.main-caroussel{
+.container{
     margin: 10% auto;
-    width: 100%;
+    position: relative;
+    max-width: 1100px;
+   
+    padding: 15px;
 }
 
-.games-caroussel{
+.caroussel{
     display: flex;
-    justify-content: space-around;
+    flex-flow: row nowrap;
+    gap: 30px;
+}
+
+.caroussel-wrapper{
+    overflow-x: auto;
+    overflow: hidden;
+}
+
+.arrow-left,
+.arrow-right{
+    position: absolute;
+    top:0;
+    left: -10px;
+
     align-items: center;
-    flex-wrap: wrap;
+    bottom: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+  
+    cursor: pointer;
 }
 
-.imggames{
-    width: 300px;
-    border-radius: 30px;
-    
+.arrow-right{
+ 
+    left: auto;
+    right: -10px;
 }
 
-
+.item{
+    height: 400px;
+    width: 400px;
+    flex-shrink: 0;
+}
 /* responsividade */
 
 

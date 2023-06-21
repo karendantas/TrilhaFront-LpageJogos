@@ -15,16 +15,15 @@
             </div>
             <div class="menu-hamburguer"></div>
             <ul class = "menu">
-                <li class ="nav-item"><a href="index.html">Home</a></li>
-                <li class ="nav-item"><a href="#">Jogos</a></li>
+                <li class ="nav-item"><a href="#homepage">Home</a></li>
+                <li class ="nav-item"><a href="#gamespage">Jogos</a></li>
                 <li class ="nav-item"><a href="#linkforms">Inscrição</a></li>
             </ul>
          
         </nav>
     </header>
-
-    <main>
-        <section class = "home">
+0
+        <section class = "home" id="homepage">
         
              <div class="main-bloco"> </div>
 
@@ -77,20 +76,37 @@
             </div>
         </section>
 
-        <section class = "main-caroussel">
-            <div class="games-caroussel">
-                <div class="game-element">
-                    <img class = "imggames" src="/static/img/lol.jpg" alt="">
+        <section>
+        
+        <div class = "container" id="gamespage">
+            <button class = "arrow-left control" aria-label="Previous image">  
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+              </svg>  </button>
+            <button class = "arrow-right control" aria-label="Next image"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+              </svg></button>
+            <div class="caroussel-wrapper">
+                <div class="caroussel">
+                    <div class="game-element">
+                        <img class = "item current-item" src="/static/img/lol.jpg" alt="">
+                    </div>
+                    <div class="game-element">
+                        <img class = "item current-item" src="/static/img/valorant1.jpg" alt="">
+                    </div>
+                    <div class="game-element">
+                        <img class = "item current-item" src="/static/img/dota2.jpg" alt="">
+                    </div>
+                    <div class="game-element">
+                        <img class = "item current-item" src="/static/img/valorant1.jpg" alt="">
+                    </div>
+                    <div class="game-element">
+                        <img class = "item current-item" src="/static/img/lol.jpg" alt="">
+                    </div>
                 </div>
-                <div class="game-element">
-                    <img class = "imggames" src="/static/img/valorant.jpg" alt="">
-                </div>
-                <div class="game-element">
-                    <img class = "imggames" src="/static/img/dota2.jpg" alt="">
-                </div>
-                
                
             </div>
+        </div>
         </section>
     </main>
 
@@ -99,5 +115,7 @@
             <li></li>
         </ul>
     </footer>
+
+    <script type="text/javascript" src = "/static/js/app.js"></script>
 </body>
 </html>
