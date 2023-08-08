@@ -30,20 +30,18 @@ header{
     width: 100%;
     background-color: #f3e6ed;
     padding: 10px 20px;
-    box-shadow:  rgba(245, 169, 222, 0.384) 0px 3px 29px 0px;
-    position:fixed;
     top:0;
-    z-index: 999;
-
+   
 }
 
 .logotipo{
-    width: 100px;
+    width: 70px;
 }
 
 .navigation{
     margin: 0 auto;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 980px;
     display: flex;
     padding: 0 10px;
     align-items: center;
@@ -114,374 +112,73 @@ a{
     padding: 10px 15px;
     letter-spacing: 1px;
     font-family: Geologica;
-    
- 
 
 }
 
 a:hover{
-    color:  rgb(245, 169, 222);
+    color:  rgb(248, 204, 162);
     transition: 0.5s ease;
 }
 
 
 /* main */
-.home{
+
+.main-block{
     position: relative;
-    width: 100%;
-    height: 100vh;
-    margin: 10% auto;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.main-bloco{
-position: absolute;
-z-index: 1;
-
-width: 80%;
-height: 69.0vh;
-
-background-image: url("/static/img/skyc.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-transform: scaleX(-1);
-
-opacity: 0.5;
-}
-
-.main-imagem{
-   position: relative;
-    width: 900px;
-    z-index: 4;
-    
-}
-
-.main-imagem:hover{
-    transition: 0.3s ease;
-    -webkit-filter: drop-shadow(1px 5px 5px #c975c9);
-    filter: drop-shadow(1px 5px 5px #c478a4);
-}
-
-.img-text{
-   
-    z-index: 3;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
-
-}
-
-
-.main-text{
-    color: rgb(31, 16, 21);
-    display: flex;
-    font-weight: 600;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 200px;
-    
-}
-
-.main-btn{
-    border: none;
-    background-color:rgb(240, 67, 202) ;
-    color: white;
-    width: 200px;
-    height: 50px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    font-size: 20px;
-   
-    text-transform: uppercase;
-}
-
-.main-btn:hover{
-    background-color: #ff60bd;
-    transition: 0.5s ease;
-   
-}
-
-.main-h1{
-    font-size: 50px;
-    font-weight: bold;
-
-}
-
-.main-p{
-    text-align: justify;
-    margin-bottom: 50px;
-    margin-left: 40px;
+    background-image:url("/static/img/Ep7_Act_Overview_Art_3440x1020_v3.jpg");
+    background-size: cover;
+    background-position: right;
+    width: 2000px;
+    height: 600PX;
+    max-width: 100%;
 }
 
 
 /* forms */
-
 .formulario{
-    
-   width: 100%;
-    height: 1200px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: #c478a4;
-}
-
-.forms{
-   
-    width: 600px;
-
-    margin: 15% 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#c975c9;
-    background-color:rgb(226, 212, 224);
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.555);
     border-radius: 20px;
+    height: 80%;
+    width: 400px;
+    top:10%;
+    right:5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.forms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .form-group{
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
-    
+    gap: 0.5em;
+    margin-bottom: 15px;
 }
 
-.form-title{
-font-size: 30px;
-
+.duo-div{
+    display:flex;
+    gap:2em;
 }
-label{
+
+.form-group input{
+    border:none;
+    width: 100%;
+    height: 40px;
+    outline:none;
+    border-radius: 4px;
+}
+
+.form-group label{
     font-size: 20px;
-    margin-bottom: 10px;
-    
-}
-
-input, select{
-width: 400px;
-padding: 10px;
-border-radius:30px ;
-border: none;
-background-color: rgb(235, 224, 233);
+    font-weight: 300;
 }
 
 
-/* carrossel de jogos */
-
-.container{
-    margin: 10% auto;
-    position: relative;
-    max-width: 1100px;
-   
-    padding: 15px;
-}
-
-.caroussel{
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 30px;
-}
-
-.caroussel-wrapper{
-    overflow-x: auto;
-    overflow: hidden;
-}
-
-.arrow-left,
-.arrow-right{
-    position: absolute;
-    top:0;
-    left: -10px;
-
-    align-items: center;
-    bottom: 0;
-    border: none;
-    background-color: transparent;
-    font-size: 30px;
-  
-    cursor: pointer;
-}
-
-.arrow-right{
- 
-    left: auto;
-    right: -10px;
-}
-
-.item{
-    height: 400px;
-    width: 400px;
-    flex-shrink: 0;
-}
 /* responsividade */
 
 
 
-
-@media (max-width: 1490px) {
-    body{
-        margin: 10% auto;
-    }
-    .main-imagem{
-    width: 900px;
-    }
-    .main-bloco{
-        height: 555px;
-    }
-    .main-text{
-        width: 300px;
-    }
-}
-
-@media (max-width: 1300px) {
-    body{
-        margin: 10% auto;
-    }
-    .main-imagem{
-    width: 900px;
-    }
-    .main-text{
-        width: 300px;
-        margin-left: 350px;
-    }
-}
-
-@media (max-width: 1100px) {
-    
-
-    body{
-        margin: 10% auto;
-    }
-
-    .main-bloco{
-        height: 545px;
-    }
-    .img-text{
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-text{
-        
-        margin: 0 150px 0 150px;
-     
-        font-size: 20px;
-    }
-
-    .main-imagem{
-
-    width: 900px;
-    
-    display: flex;
-    justify-content: center;
-    margin-top: 390px;
-    }
-
-    .formulario{
-        margin-top: 300px
-    }
-}
-
-
-@media (max-width: 600px) {
-    
-
-    body{
-        
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-    }
-
-    .main-bloco{
-        height: 545px;
-    }
-    .img-text{
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-text{
-        
-        margin: 0 150px 0 150px;
-     
-        font-size: 20px;
-    }
-
-    .main-imagem{
-
-    width: 900px;
-    
-    display: flex;
-    justify-content: center;
-    margin-top: 390px;
-    }
-
-    .formulario{
-        margin-top: 400px
-    }
-}
-
-@media (max-width: 390px) {
-    
-
-    body{
-        
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-    }
-
-    .main-bloco{
-        height: 305px;
-    }
-    .img-text{
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-text{
-        
-        margin: 0 150px 0 150px;
-     
-        font-size: 15px;
-    }
-
-    .main-imagem{
-
-    width: 500px;
-    
-    display: flex;
-    justify-content: center;
-    margin-top: 410px;
-    }
-
-    .formulario{
-        margin-top: 400px;
-      
-    }
-
-    .forms, .form-group, input{
-        width: 300px;
-      
-    }
-    .forms{
-        height: 700px;
-
-    }
-}
