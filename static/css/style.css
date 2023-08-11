@@ -26,129 +26,63 @@ html, body{
     background-color:#213C5A;
     border-radius: 30px;
 }
-header{
-    width: 100%;
-    background-color: #f3e6ed;
-    padding: 10px 20px;
-    top:0;
-   
-}
 
-.logotipo{
-    width: 70px;
-}
-
-span{
-    color:#e78739
-}
-.navigation{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 980px;
-    display: flex;
-    padding: 0 10px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-/*estilo tracinhos do menu mobile*/
-.menu-hamburguer{
-    width: 50px;
-    height: 50px;
-
-    background-color: transparent;
-    border: 0;
-    border-radius: 5px;
-
-    position: relative;
-    cursor: pointer;
-
-    display: none;
-}
-
-.menu-hamburguer::after{
-    content: "";
-
-    position: absolute;
-    top: 35%;
-    left: 15%;
-
-    height: 5%;
-    width: 70%;
-
-    border-radius: 5px;
-    background-color: white;
-}
-
-.menu-hamburguer::before{
-    content: "";
-
-    position: absolute;
-    top: 55%;
-    left: 15%;
-
-    height: 5%;
-    width: 70%;
-
-    border-radius: 5px;
-    background-color: white;
-}
-
-/*navbar */
-
-.menu{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.li{
-    margin-left: 30px ;
-}
-
-a{
-    font-size: 20px;
-    text-transform: uppercase;
-    color: rgb(49, 26, 34);
-    text-decoration: none;
-    padding: 10px 15px;
-    letter-spacing: 1px;
-    font-family: Geologica;
-
-}
-
-a:hover{
-    color:  rgb(248, 204, 162);
-    transition: 0.5s ease;
-}
 
 
 /* main */
 
-
-
-
 .main-block{
     position: relative;
+    height: 600PX;
     background-image:url("/static/img/Ep7_Act_Overview_Art_3440x1020_v3.jpg");
     background-size: cover;
     background-position: center;
+    filter: brightness(80%);
+    opacity: 0.9;
+   
+}
+.main-block2{
+    position: absolute;
     width: 3000px;
     height: 600PX;
     max-width: 100%;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
 
-/* forms */
-.formulario{
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.432);
-    border-radius: 20px;
+.texto-main{
+    color:#ffffff;
+    margin-top:60px;
+    margin-left:40px;
     height: 80%;
     width: 400px;
-    top:10%;
-    right:5%;
+    max-width: 100%;
+}
+.texto-main >h1{
+    font-size: 50px;
+  
+    font-family: inter;
+}
+
+.texto-main >p{
+    color:#000000;
+    font-size: 30px;
+    width: 600px;
+}
+/* forms */
+.formulario{
+  
+    background-color: rgba(255, 255, 255, 0.664);
+    border-radius: 20px;
+    margin-top:45px;
+    margin-right:40px;
+    height: 85%;
+    width: 400px;
+    max-width: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .forms{
@@ -173,7 +107,7 @@ a:hover{
 
 .duo-div{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
     
 }
 
@@ -185,7 +119,7 @@ a:hover{
     border-radius: 4px;
 }
 
- .div-uf input{
+.div-uf input{
     width: 40%;
  }
 .div-jogos select{
@@ -202,7 +136,33 @@ a:hover{
     color:#213C5A;
 }
 
+.form-group > button{
+    border:none;
+    width: 150px;
+    margin: 0 auto;
+    background-color: #213C5A;
+    color: white;
+    height: 40px;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
+
+.info-div{
+    width: 3000px;
+    height: 600px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-div >h2 {
+    font-size: 50px;
+    font-family: inter;
+    color: #213C5A;
+}
 /* responsividade */
 
 
