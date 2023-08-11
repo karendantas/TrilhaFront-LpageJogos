@@ -37,16 +37,9 @@ html, body{
     background-image:url("/static/img/Ep7_Act_Overview_Art_3440x1020_v3.jpg");
     background-size: cover;
     background-position: center;
-    filter: brightness(80%);
-    opacity: 0.9;
-   
-}
-.main-block2{
-    position: absolute;
+    filter: brightness(100%);
     width: 3000px;
-    height: 600PX;
-    max-width: 100%;
-    top:0;
+    max-width: 100%;  
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -64,19 +57,20 @@ html, body{
 }
 .texto-main >h1{
     font-size: 50px;
-  
+    color: #213C5A;
     font-family: inter;
 }
 
 .texto-main >p{
-    color:#000000;
-    font-size: 30px;
-    width: 600px;
+    color:white;
+    font-size: 20px;
+    text-align: justify;
+    width: 400px;
 }
 /* forms */
 .formulario{
   
-    background-color: rgba(255, 255, 255, 0.664);
+    background-color: rgba(255, 255, 255, 0.884);
     border-radius: 20px;
     margin-top:45px;
     margin-right:40px;
@@ -116,12 +110,9 @@ html, body{
     width: 100%;
     height: 40px;
     outline:none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     border-radius: 4px;
 }
-
-.div-uf input{
-    width: 40%;
- }
 .div-jogos select{
     width: 50%;
     border:none;
@@ -130,6 +121,11 @@ html, body{
     height: 40px;
 }
 
+.duo-div{
+    display: flex;
+    
+    gap:2em;
+}
 .form-group label{
     font-size: 20px;
     font-weight: 300;
@@ -163,6 +159,25 @@ html, body{
     font-family: inter;
     color: #213C5A;
 }
+
+.infos{
+    margin-top:60px;
+    display: flex;
+    gap:4em;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ion-icon{
+    font-size: 30px;
+}
+
 /* responsividade */
 
 
