@@ -52,11 +52,13 @@ html, body{
     max-width: 100%;
 }
 .texto-main >h1{
-    font-size: 50px;
+    font-size: 70px;
     color: #213C5A;
-    filter: drop-shadow(5px 5px 0.4px blcak);
+    filter: drop-shadow(-5px 7px 0px #ffffff);
     font-family: inter;
+
 }
+
 
 .texto-main >p{
     color:white;
@@ -65,21 +67,37 @@ html, body{
     width: 400px;
 }
 
-
+.texto-main .btn-link{
+    background-color: #213C5A;
+    border:none;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 200px;
+    font-size:20px;
+    filter: drop-shadow(-5px 7px 0px #ffffff);
+    font-weight: 600;
+    color: white;
+}
+.btn-link:hover{
+    filter:none;
+    transition: 0.3s;
+}
 /* forms */
 
 .forms-block{
-    background-color: #213C5A;
+    background: rgb(255,167,93);
+    background: linear-gradient(205deg, rgba(255,167,93,1) 43%, rgba(255,181,86,1) 90%);
     padding: 70px ;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1400px;
+    width: 3000px;
     max-width: 100%;
 }
 .formulario{
   
-    background-color: rgba(255, 255, 255, 0.884);
+    background-color: white;
     border-radius: 20px;
     height: 550px;
     width: 500px;
