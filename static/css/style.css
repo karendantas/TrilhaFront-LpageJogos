@@ -32,23 +32,21 @@ html, body{
 /* main */
 
 .main-block{
-    
     height: 600px;
     background-image:url("/static/img/homeimg.png");
     background-size: cover;
-    background-position: center;
-    width: 3000px;
-    max-width: 100%;  
-    margin-top:0;
+    background-position: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     
-
 }
 
 
 .texto-main{
     color:#ffffff;
-    margin-top:120px;
-    margin-left:40px;
+    margin-top:50px;
+    margin-left:100px;
     height: 80%;
     width: 400px;
     max-width: 100%;
@@ -56,6 +54,7 @@ html, body{
 .texto-main >h1{
     font-size: 50px;
     color: #213C5A;
+    filter: drop-shadow(5px 5px 0.4px blcak);
     font-family: inter;
 }
 
@@ -68,14 +67,22 @@ html, body{
 
 
 /* forms */
+
+.forms-block{
+    background-color: #213C5A;
+    padding: 70px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1400px;
+    max-width: 100%;
+}
 .formulario{
   
     background-color: rgba(255, 255, 255, 0.884);
     border-radius: 20px;
-    margin-top:45px;
-    margin-right:40px;
-    height: 85%;
-    width: 400px;
+    height: 550px;
+    width: 500px;
     max-width: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -99,12 +106,6 @@ html, body{
     margin-bottom: 15px;
 }
 
-.duo-div{
-    display:flex;
-    justify-content: space-between !important;
-    
-}
-
 .form-group input{
     border:none;
     width: 100%;
@@ -114,18 +115,19 @@ html, body{
     border-radius: 4px;
 }
 .div-jogos select{
-    width: 50%;
+    width: 100%;
     border:none;
     outline: none;
     border-radius: 4px;
     height: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .duo-div{
     display: flex;
-    
     gap:2em;
 }
+
 .form-group label{
     font-size: 20px;
     font-weight: 300;
@@ -135,12 +137,17 @@ html, body{
 .form-group > button{
     border:none;
     width: 150px;
-    margin: 0 auto;
+    margin: 6% auto;
     background-color: #213C5A;
     color: white;
     height: 40px;
+    font-weight: 500;
     border-radius: 100px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.form-group > button:hover{
+    background-color: #44658b;
+    transition: 0.4s;
 }
 
 
